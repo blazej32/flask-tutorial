@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends "layout.html" %}
+{% block content %}
     {% for match in matches %}
         <h1>{{ match.date }}    {{ match.home }} {{ match.home_goals }}:{{ match.away_goals }} {{ match.away }}</h1>
     {% endfor %}
-</body>
-</html>
+{% endblock content %}

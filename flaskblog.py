@@ -27,7 +27,7 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template('about.html', matches=matches)
+    return render_template('about.html', matches=matches, title='Matches')
 
 
 if __name__ == '__main__':
