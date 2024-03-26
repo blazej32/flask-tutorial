@@ -4,6 +4,8 @@
     <title></title>
 </head>
 <body>
-    <h1>About Page</h1>
+    {% for match in matches %}
+        <h1>{{ match.date }}    {{ match.home }} {{ match.home_goals }}:{{ match.away_goals }} {{ match.away }}</h1>
+    {% endfor %}
 </body>
 </html>
